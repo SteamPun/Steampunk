@@ -1,0 +1,7 @@
+.interaction-frame {
+  box-sizing: border-box;
+  width: 1000px;
+  height: 525px;
+  padding: 20px 40px;
+  border: 1px solid green;
+}

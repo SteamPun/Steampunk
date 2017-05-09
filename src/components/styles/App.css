@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App-game-frame {
+  height: 664px;
+  width: 1000px;
+  background-color: #ccc;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

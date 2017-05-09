@@ -1,0 +1,12 @@
+.overview-bar {
+  height: 60px;
+  width:100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.bar-item {
+  text-align: center;
+  float: left;
+  padding: 20px 30px;  
+}

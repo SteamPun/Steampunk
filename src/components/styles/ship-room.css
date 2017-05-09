@@ -1,0 +1,23 @@
+.ship-room {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 0 10px;
+  width: 140px;
+  font-size: 14px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.ship-room h4 {
+  margin: 5px 0;
+}
+
+.ship-room p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.ship-room button {
+  width: 100px;
+}
