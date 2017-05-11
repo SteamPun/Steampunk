@@ -24,9 +24,16 @@ export function setTravelActive(gameState) {
 }
 export function clearRoom(room) {
 	return {
-		type: 'CLEAR_THIS_ROOM',
+		type: 'CLEAR_ROOM_CONFIRMATION',
 		payload: {
 			room: room,
+		}
+	}
+}
+export function confirmationCancel() {
+	return {
+		type: 'CONFIRMATION_CANCELED',
+		payload: {
 		}
 	}
 }

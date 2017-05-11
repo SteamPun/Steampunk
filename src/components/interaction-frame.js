@@ -5,14 +5,17 @@ import './styles/interaction-frame.css'
 
 import ShipMain from './ship-main'
 import TownMain from './town-main'
+import ClearRoomConfirmation from './clear-room-confirmation'
 
 class InteractionFrame extends Component {
   render() {
+    console.log(this.props.gameState.activeScreen)
     const activeScreen = this.props.gameState.activeScreen
     return (
       <div className="interaction-frame">
         {activeScreen.ship && <ShipMain />}
         {activeScreen.town && <TownMain />}
+        {activeScreen.clearRoomConfirmation && <ClearRoomConfirmation />}
       </div>
     )
   }

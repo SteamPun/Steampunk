@@ -10,6 +10,7 @@ const gameState = {
     ship: false,
     town: false,
     travel: false,
+    clearRoomConfirmation: false,
   },
   shipInTown: true,
 }
@@ -39,6 +40,16 @@ export default function(state = gameState, action) {
         cloned.activeScreen[key] = false
       }
       cloned.activeScreen.travel = true
+      return cloned
+      break
+    case 'CLEAR_ROOM_CONFIRMATION':
+      cloned = Object.assign({}, state)
+      cloned.activeScreen.clearRoomConfirmation = true
+      return cloned
+      break
+    case 'CONFIRMATION_CANCELED':
+      cloned = Object.assign({}, state)
+      cloned.activeScreen.clearRoomConfirmation = false
       return cloned
       break
     default:

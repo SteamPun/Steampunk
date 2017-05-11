@@ -109,11 +109,22 @@ const ship = {
 			appearance: 20,
 		},
 	],
+	activeRoom: {},
 }
 
 export default function(state = ship, action) {
-	console.log(action, 'here')
+	let cloned
 	switch(action.type) {
+		case 'CLEAR_ROOM_CONFIRMATION':
+			cloned = Object.assign({}, state)
+			cloned.activeRoom = action.payload.room
+			return cloned
+			break
+		case 'CONFIRMATION_CANCELED':
+			cloned = Object.assign({}, state)
+			cloned.activeRoom = {}
+			return cloned
+			break
     default:
       return state
   }

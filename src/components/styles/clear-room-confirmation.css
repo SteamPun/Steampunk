@@ -1,0 +1,21 @@
+.clear-room-confirmation {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.clear-room-confirmation h3 {
+  margin-bottom: 50px;
+}
+
+.clear-room-confirmation button {
+  margin-top: 50px;
+  height: 30px;
+  font-size: 1em;
+}
